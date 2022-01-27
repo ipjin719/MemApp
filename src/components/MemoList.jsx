@@ -1,10 +1,9 @@
 import React from 'react';
 import {
-  View, ScrollView, Text, StyleSheet,
+  View, ScrollView, Text, StyleSheet, TouchableOpacity,
 } from 'react-native';
 
 import { Feather } from '@expo/vector-icons';
-import Icon from './Icon';
 
 export default function MemoList() {
   return (
@@ -14,10 +13,9 @@ export default function MemoList() {
           <Text style={styles.memListItemTitle}>買い物リスト</Text>
           <Text style={styles.memListItemDate}>2022年1月24日 22:06</Text>
         </View>
-        <View>
-          <Icon name="delete" size={16} color="#B0B0B0" />
+        <TouchableOpacity>
           <Feather name="x" size={16} color="#B0B0B0" />
-        </View>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.memListItem}>
@@ -25,9 +23,9 @@ export default function MemoList() {
           <Text style={styles.memListItemTitle}>買い物リスト</Text>
           <Text style={styles.memListItemDate}>2022年1月24日 22:06</Text>
         </View>
-        <View>
+        <TouchableOpacity>
           <Feather name="x" size={16} color="#B0B0B0" />
-        </View>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.memListItem}>
@@ -35,9 +33,9 @@ export default function MemoList() {
           <Text style={styles.memListItemTitle}>買い物リスト</Text>
           <Text style={styles.memListItemDate}>2022年1月24日 22:06</Text>
         </View>
-        <View>
+        <TouchableOpacity>
           <Feather name="x" size={16} color="#B0B0B0" />
-        </View>
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );
